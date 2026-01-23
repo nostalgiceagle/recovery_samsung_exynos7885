@@ -1,2 +1,12 @@
+on fs
+    start hwservicemanager
+    
 on init
     write /proc/sys/kernel/hung_task_timeout_secs 0
+
+service hwservicemanager /system/bin/hwservicemanager
+    user root
+    group root
+    disabled
+    onrestart setprop hwservicemanager.ready false
+    seclabel u:r:recovery:s0
