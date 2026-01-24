@@ -1,0 +1,5 @@
+<manifest version="1.0" type="device" target-level="6">
+    <sepolicy>
+        <version>30.0</version>
+    </sepolicy>
+</manifest>
