@@ -28,15 +28,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
-# Fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd \
-    android.hardware.fastboot@1.0-impl-mock
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.fastbootd.available=true
-
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
