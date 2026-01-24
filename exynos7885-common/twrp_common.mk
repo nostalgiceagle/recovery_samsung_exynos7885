@@ -19,6 +19,10 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# OEM Shifted device APIs
+PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_TARGET_VNDK_VERSION := 30
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \
