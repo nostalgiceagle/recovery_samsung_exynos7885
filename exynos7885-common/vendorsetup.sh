@@ -4,7 +4,9 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-echo "vendorsetup.sh: Exporting Orangefox Variables..."
+echo "
+ - device/samsung/exynos7885-common/vendorsetup.sh: Exporting Orangefox Variables...
+ "
 
 export OF_FLASHLIGHT_ENABLE=1
 #
