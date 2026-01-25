@@ -167,4 +167,6 @@ export OF_UNMOUNT_SDCARDS_BEFORE_REBOOT=1
 # - default = 0
 
 
+# Others
+export FOX_DELETE_INITD_ADDON=1
 
