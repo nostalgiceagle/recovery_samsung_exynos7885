@@ -114,56 +114,75 @@ export OF_QUICK_BACKUP_LIST="/data;/efs;"
 #
 # OrangeFox Comment:
 #
-# - Use this to specify the desired default list of partitions selected for "Quick Backup"
-# - Note: only specify a partition if you mount it in your fstab, else an error will be generated
-# - The partitions should be separated by a semi-colon, and the list should end with a semi-colon
-# - Example: export OF_QUICK_BACKUP_LIST="/data;/storage;/persist;"
+#    - Use this to specify the desired default list of partitions selected for "Quick Backup"
+#    - Note: only specify a partition if you mount it in your fstab, else an error will be generated
+#    - The partitions should be separated by a semi-colon, and the list should end with a semi-colon
+#    - Example: export OF_QUICK_BACKUP_LIST="/data;/storage;/persist;"
 
 export OF_USE_LOCKSCREEN_BUTTON=1
 #
 # OrangeFox Comment:
 #
-# - Set this to 1 to replace the "Swipe up" lockscreen screen with a button
-# - This is especially useful (for the time being) for 720p screens
-# - default = 0
+#    - Set this to 1 to replace the "Swipe up" lockscreen screen with a button
+#    - This is especially useful (for the time being) for 720p screens
+#    - default = 0
 
 export FOX_ENABLE_APP_MANAGER=1
 #
 # OrangeFox Comment:
 #
-# - set this to 1 to enable the OrangeFox App Manager (now disabled by default)
-# - sometimes there are issues with the App Manager, especially with Android 11 and higher - if you don't care, then use this variable to enable it
-# - default = 0
+#    - set this to 1 to enable the OrangeFox App Manager (now disabled by default)
+#    - sometimes there are issues with the App Manager, especially with Android 11 and higher - if you don't care, then use this variable to enable it
+#    - default = 0
 
 
 export FOX_NO_SAMSUNG_SPECIAL=0
 #
 # OrangeFox Comment:
 #
-# - set this to 1 to disable some operations relating only to Samsung devices - these are:
-# -   1) appending "SEANDROIDENFORCE" to the recovery image of a Samsung device
-# -   2) creating an Odin flashable tar file of the recovery image
-# - all decryption/recovery passwords are successfully entered)
-# - default = 0
+#    - set this to 1 to disable some operations relating only to Samsung devices - these are:
+#    -   1) appending "SEANDROIDENFORCE" to the recovery image of a Samsung device
+#    -   2) creating an Odin flashable tar file of the recovery image
+#    - all decryption/recovery passwords are successfully entered)
+#    - default = 0
 
 export OF_FORCE_DATA_FORMAT_F2FS=1
 #
 # OrangeFox Comment:
 #
-# - Set this to 1 to force the selection of f2fs when formatting data; this is only needed when f2fs is never selected by default
-# - Use with care! Do NOT use unless you are sure that all targeted ROMs on the device will support f2fs!
-# - default = 0
+#    - Set this to 1 to force the selection of f2fs when formatting data; this is only needed when f2fs is never selected by default
+#    - Use with care! Do NOT use unless you are sure that all targeted ROMs on the device will support f2fs!
+#    - default = 0
 
 export OF_UNMOUNT_SDCARDS_BEFORE_REBOOT=1
 #
 # OrangeFox Comment:
 #
-# - Set to 1 to attempt to unmount the SD cards before rebooting
-# - default = 0
+#    - Set to 1 to attempt to unmount the SD cards before rebooting
+#    - default = 0
 
-
-# Others
 export OF_STATUS_H=82
+#
+# OrangeFox Comment:
+#
+#    - use this only when the device has a cutout
+#    - you do not need to add or subtract OF_STATUS_H from OF_SCREEN_H
+#    - use "export OF_STATUS_H=144" to change statusbar size to 144
+#    - Tip: take screenshot in android and count status bar height using any graphics editor (eg. MSPaint)
+#    - default = 72    
+
 export FOX_DELETE_INITD_ADDON=1
+#
+# OrangeFox Comment:
+#
+#    - set this to 0 to enable the initd addon
+#    - default = 1
+
 export OF_STATUS_INDENT_LEFT=64
 export OF_STATUS_INDENT_RIGHT=64
+#
+# OrangeFox Comment:
+#
+#    - use OF_STATUS_INDENT_LEFT and OF_STATUS_INDENT_RIGHT when device has rounded corners
+#    - the recommended setting of these vars is 48 (when device has rounded corners)
+#    - default = 20
