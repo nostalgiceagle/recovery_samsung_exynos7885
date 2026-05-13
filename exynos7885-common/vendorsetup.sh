@@ -146,13 +146,6 @@ export FOX_NO_SAMSUNG_SPECIAL=0
 # - all decryption/recovery passwords are successfully entered)
 # - default = 0
 
-export OF_USE_LEGACY_BATTERY_SERVICES=1
-#
-# OrangeFox Comment:
-#
-# - Set to 1 if the battery percentage in the status bar is not working properly (eg, if it shows 100% at all times)
-# - default = 0
-
 export OF_FORCE_DATA_FORMAT_F2FS=1
 #
 # OrangeFox Comment:
