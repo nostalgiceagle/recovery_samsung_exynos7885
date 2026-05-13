@@ -186,3 +186,10 @@ export OF_STATUS_INDENT_RIGHT=64
 #    - use OF_STATUS_INDENT_LEFT and OF_STATUS_INDENT_RIGHT when device has rounded corners
 #    - the recommended setting of these vars is 48 (when device has rounded corners)
 #    - default = 20
+
+export FOX_USE_BUSYBOX_BINARY=1
+#
+# OrangeFox Comment:
+#
+#    - set this to 1 to add a standalone /sbin/busybox binary to the build
+#    - default = 0
