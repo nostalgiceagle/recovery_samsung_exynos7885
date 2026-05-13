@@ -193,3 +193,11 @@ export FOX_USE_BUSYBOX_BINARY=1
 #
 #    - set this to 1 to add a standalone /sbin/busybox binary to the build
 #    - default = 0
+
+export OF_FORCE_DATA_FORMAT_F2FS=1
+#
+# OrangeFox Comment:
+#
+#    - Set this to 1 to force the selection of f2fs when formatting data; this is only needed when f2fs is never selected by default
+#    - Use with care! Do NOT use unless you are sure that all targeted ROMs on the device will support f2fs!
+#    - default = 0
